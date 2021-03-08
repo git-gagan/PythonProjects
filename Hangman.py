@@ -10,7 +10,7 @@ data=[
 
 def get_valid_word():
     Comp_choice = random.choice(data)
-    while "-" in Comp_choice and " " in Comp_choice:
+    while "-" in Comp_choice or " " in Comp_choice:
         Comp_choice = random.choice(data)
     return Comp_choice.upper()  #The word selected will be unambiguous
 
